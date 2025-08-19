@@ -6,7 +6,7 @@ import { EditTodoForm } from './EditTodoForm';
 uuidv4();
 
 export const TodoWrapperLocalStorage = () => {
-    const [todos, setTodos] = useState([])
+    const [todos, setTodos] = useState([]) 
 
     useEffect(() => {
         const savedTodos = JSON.parse(localStorage.getItem('todos')) || [];
